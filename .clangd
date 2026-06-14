@@ -1,0 +1,28 @@
+CompileFlags:
+  Add:
+    - -std=c++23
+    - -Wall
+    - -Wextra
+    - -Wpedantic
+    # - -Weverything  # ほぼすべての警告を有効化
+    - -Wunused-variable
+    - -Wunused-parameter
+    - -Wunused-function
+    # - -Wsign-compare
+    # - -Wconversion
+    - -Wshadow
+    - -Wno-keyword-macro
+    - -I./ac-library
+
+Index:
+  Background: Skip
+
+InlayHints:
+  Enabled: false
+
+Diagnostics:
+  UnusedIncludes: None
+  MissingIncludes: None
+  Suppress:
+    - missing-includes
+    - Wvla-cxx-extension
