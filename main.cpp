@@ -1,26 +1,19 @@
-#include <atcoder/dsu>
-#include <bits/stdc++.h>
-using namespace atcoder;
+// abc462 -> 462
+// c0de9ueen -> 09
+// a ->何も出力しない
+// 前から1つずつ見ていって数字かどうかの判定ができればよい
+#include <cctype>
+#include <iostream>
+#include <ostream>
+#include <string>
 using namespace std;
-#define rep(i, n) for (int i = 0; i < (n); i++)
-using ll = long long;
-using P = pair<int, int>;
 
 int main() {
-  int n, q;
-  cin >> n >> q;
-  dsu uf(n);
-  rep(i, q) {
-    int t;
-    cin >> t;
-    int u, v;
-    cin >> u >> v;
-    if (t == 0) {
-      uf.merge(u, v);
-    }
-    if (t == 1) {
-      cout << uf.same(u, v) << endl;
-    }
+  string s;
+  cin >> s;
+  for (char c : s) {
+    if (isdigit(c)) cout << c;
   }
+  cout << endl;
   return 0;
 }
