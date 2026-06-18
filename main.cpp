@@ -8,6 +8,12 @@
 #include <string>
 using namespace std;
 
+string is_number(string s) {
+  if (isdigit(s)) {
+    return s
+  }
+}
+
 int main() {
   string s;
   cin >> s;
