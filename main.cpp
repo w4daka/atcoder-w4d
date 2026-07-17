@@ -4,13 +4,12 @@ using namespace std;
 
 
 int main() {
-  int a,b;
-  cin>> a >> b;
-  if ((a*b) %2 !=0) {
-   cout << "Odd" << endl;
-  }
-  else {
-   cout << "Even" << endl;
+  int h,a;
+  cin>> h >> a;
+  if (h % a == 0){
+    cout << h/a << endl;
+  }else{
+  cout << h / a + 1 << endl;
   }
 }
 
