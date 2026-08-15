@@ -5,8 +5,8 @@ using namespace std;
 
 
 int main() {
-  cout <<"こんにちは"<< endl;
-  cout << "AtCoder" << endl;
+  cout <<"いつも2525"<< endl;
+  cout << "AtCoderくん" << endl;
 }
 
 
