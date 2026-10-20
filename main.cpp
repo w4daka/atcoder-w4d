@@ -2,11 +2,12 @@
 using namespace std;
 
 int main() {
-  int a, b;
-  cin >> a >> b;
-  if ((a * b) % 2 == 0) {
-    cout << "Even" << endl;
+  int h, a;
+  cin >> h >> a;
+  int c = h % a;
+  if (c == 0) {
+    cout << h / a << endl;
   } else {
-    cout << "Odd" << endl;
+    cout << h / a + 1 << endl;
   }
 }
